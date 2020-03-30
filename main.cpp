@@ -74,11 +74,13 @@ int main()
 	MyDoubleVector chayo7(10);
 	MyDoubleVector chayo8(10);
 	MyDoubleVector chayo9;
+    MyDoubleVector chayo10(100);
 
 	for(int i = 0;i<10;i++)
 	{
 		chayo7.push_back(i);
 		chayo8.push_back(i);
+        chayo10.push_back(i);
 	}
 
 	if(chayo7 == chayo8)
@@ -97,7 +99,7 @@ int main()
 	chayo9.print();
 	chayo9.reserve(10);
 	chayo9.print();
-
+    chayo10.print();
 	
 	cout << "Result: " << chayo9.capacity() << "," << chayo9.size() << endl;
 	cout << "--------------------------" << endl;
